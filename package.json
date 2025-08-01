@@ -31,6 +31,7 @@
   "license": "ISC",
   "packageManager": "pnpm@10.13.1",
   "dependencies": {
+    "@microsoft/tsdoc": "^0.15.1",
     "@nestjs/common": "^11.1.5",
     "@nestjs/config": "^4.0.2",
     "@nestjs/core": "^11.1.5",
