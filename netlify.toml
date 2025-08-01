@@ -1,47 +1,16 @@
 # Netlify configuration for NFT Marketplace Backend
+# Functions removed due to 4KB environment variables limit
+# Backend will be deployed separately
+
 [build]
-  # Build command for NestJS
-  command = "pnpm run build"
+  # Skip build for backend - no functions to deploy
+  command = "echo 'Backend functions disabled - deploy backend separately'"
 
-  # Functions directory
-  functions = "netlify/functions"
-
-  # Node.js version and environment variables
-
-# Plugin to auto-install function dependencies
-[[plugins]]
-  package = "@netlify/plugin-functions-install-core"
-# Minimal configuration to avoid 4KB AWS Lambda limit
-# Only essential variables are included here
-# For full backend functionality, additional environment variables
-# may need to be set in Netlify's Environment Variables dashboard
+  # No functions directory
+  publish = "dist"
 
 [build.environment]
   NODE_VERSION = "18"
-  # Only essential variables for basic function operation
-  CONTRACT_ADDRESS = "0x5B8c37aBdd3Dc72874d20a9403549798309599b5"
-  FRONTEND_URL = "https://nft-market-tuna.netlify.app"
 
-# API routes
-[[redirects]]
-  from = "/api/auth/*"
-  to = "/.netlify/functions/auth"
-  status = 200
-
-[[redirects]]
-  from = "/api/nft/*"
-  to = "/.netlify/functions/nft"
-  status = 200
-
-[[redirects]]
-  from = "/api/*"
-  to = "/.netlify/functions/api"
-  status = 200
-
-# CORS headers
-[[headers]]
-  for = "/api/*"
-  [headers.values]
-    Access-Control-Allow-Origin = "*"
-    Access-Control-Allow-Headers = "Content-Type, Authorization"
-    Access-Control-Allow-Methods = "GET, POST, PUT, DELETE, OPTIONS"
+# No API routes - functions removed
+# Backend will be deployed separately on a different platform
