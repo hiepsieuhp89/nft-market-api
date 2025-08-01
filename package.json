@@ -45,6 +45,7 @@
     "class-validator": "^0.14.2",
     "dotenv": "^17.2.1",
     "ethers": "^6.15.0",
+    "file-type": "^21.0.0",
     "firebase-admin": "^13.4.0",
     "passport": "^0.7.0",
     "passport-jwt": "^4.0.1",
@@ -53,9 +54,9 @@
     "rxjs": "^7.8.2"
   },
   "devDependencies": {
-    "@netlify/functions": "^2.8.1",
     "@nestjs/cli": "^11.0.9",
     "@nestjs/testing": "^11.1.5",
+    "@netlify/functions": "^2.8.1",
     "@types/bcryptjs": "^3.0.0",
     "@types/node": "^24.1.0",
     "@types/passport-jwt": "^4.0.1",
