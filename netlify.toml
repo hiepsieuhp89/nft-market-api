@@ -11,16 +11,16 @@
 # Plugin to auto-install function dependencies
 [[plugins]]
   package = "@netlify/plugin-functions-install-core"
-# ALL environment variables have been moved to Netlify's Environment Variables dashboard
-# to avoid the 4KB AWS Lambda limit.
-#
-# Please set ALL required environment variables in your Netlify site settings:
-# Site settings → Environment variables
-#
-# See NETLIFY_ENV_SETUP.md for the complete list of required variables.
+# Minimal configuration to avoid 4KB AWS Lambda limit
+# Only essential variables are included here
+# For full backend functionality, additional environment variables
+# may need to be set in Netlify's Environment Variables dashboard
 
 [build.environment]
   NODE_VERSION = "18"
+  # Only essential variables for basic function operation
+  CONTRACT_ADDRESS = "0x5B8c37aBdd3Dc72874d20a9403549798309599b5"
+  FRONTEND_URL = "https://nft-market-tuna.netlify.app"
 
 # API routes
 [[redirects]]
