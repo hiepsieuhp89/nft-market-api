@@ -36,8 +36,10 @@
     "@nestjs/config": "^4.0.2",
     "@nestjs/core": "^11.1.5",
     "@nestjs/jwt": "^11.0.0",
+    "@nestjs/mapped-types": "^2.1.0",
     "@nestjs/passport": "^11.0.5",
     "@nestjs/platform-express": "^11.1.5",
+    "@nestjs/serve-static": "^5.0.3",
     "@nestjs/swagger": "^11.2.0",
     "@openzeppelin/defender-sdk": "^2.7.0",
     "axios": "^1.11.0",
@@ -52,7 +54,8 @@
     "passport-jwt": "^4.0.1",
     "passport-local": "^1.0.0",
     "reflect-metadata": "^0.2.2",
-    "rxjs": "^7.8.2"
+    "rxjs": "^7.8.2",
+    "swagger-ui-express": "^5.0.1"
   },
   "devDependencies": {
     "@nestjs/cli": "^11.0.9",
@@ -62,6 +65,7 @@
     "@types/node": "^24.1.0",
     "@types/passport-jwt": "^4.0.1",
     "@types/passport-local": "^1.0.38",
+    "@types/swagger-ui-express": "^4.1.8",
     "@typescript-eslint/eslint-plugin": "^8.38.0",
     "@typescript-eslint/parser": "^8.38.0",
     "eslint": "^9.32.0",
