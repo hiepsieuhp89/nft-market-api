@@ -14,7 +14,7 @@ async function createNestApp() {
     // Enable CORS
     app.enableCors({
       origin: [
-        process.env.FRONTEND_URL || 'https://your-frontend-app.netlify.app',
+        process.env.FRONTEND_URL || 'https://nft-market-tuna.netlify.app',
         'http://localhost:3000',
         'http://localhost:3001',
         'http://localhost:5173',
